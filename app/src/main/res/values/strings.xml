@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DatabindingSample</string>
+    <string name="basic">基础使用</string>
+    <string name="expressions">表达式</string>
+    <string name="source_reference">My name is %1$s</string>
+    <string name="method_references">方法引用</string>
+    <string name="event_binding">事件绑定</string>
+    <string name="update_name">修改名称</string>
+    <string name="observable">Observable 使用</string>
+    <string name="binding_adapters">自定义属性</string>
+</resources>

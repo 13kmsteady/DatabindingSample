@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+
+		<variable
+			name="user"
+			type="com.i3kmsteady.databindingsample.entity.User" />
+	</data>
+
+	<android.support.constraint.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<android.support.v7.widget.AppCompatTextView
+			android:layout_width="0dp"
+			android:layout_height="30dp"
+			android:background="@color/colorPrimary"
+			android:gravity="center"
+			android:text="@{user.firstName}"
+			android:textColor="@android:color/white"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			tools:text="Include " />
+	</android.support.constraint.ConstraintLayout>
+</layout>

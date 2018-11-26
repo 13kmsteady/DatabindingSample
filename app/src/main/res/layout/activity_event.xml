@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+		<variable
+			name="user"
+			type="com.i3kmsteady.databindingsample.entity.User" />
+
+		<variable
+			name="task"
+			type="com.i3kmsteady.databindingsample.entity.Task" />
+
+		<variable
+			name="handlers"
+			type="com.i3kmsteady.databindingsample.event.MyHandlers" />
+
+		<variable
+			name="presenter"
+			type="com.i3kmsteady.databindingsample.event.Presenter" />
+	</data>
+
+	<android.support.constraint.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".ui.EventActivity">
+
+		<Button
+			android:id="@+id/btnMethodReferences"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:onClick="@{handlers::onClickFriend}"
+			android:text="@{user.firstName}"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:onClick="@{() -> presenter.onSaveClick(task)}"
+			android:text="@{user.lastName}"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/btnMethodReferences" />
+	</android.support.constraint.ConstraintLayout>
+</layout>
