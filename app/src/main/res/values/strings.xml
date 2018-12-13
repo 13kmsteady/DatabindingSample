@@ -8,4 +8,7 @@
     <string name="update_name">修改名称</string>
     <string name="observable">Observable 使用</string>
     <string name="binding_adapters">自定义属性</string>
+	<string name="spinner">Spinner</string>
+    <string name="familiar_with">熟悉的</string>
+    <string name="your_choose">你的选择</string>
 </resources>

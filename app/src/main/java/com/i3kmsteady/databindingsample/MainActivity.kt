@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import com.i3kmsteady.databindingsample.ui.*
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,5 +26,9 @@ class MainActivity : AppCompatActivity() {
         btnAdapters.setOnClickListener {
             startActivity(Intent(this, BindingAdaptersActivity::class.java))
         }
+        btnSpinner.setOnClickListener {
+            startActivity(Intent(this, SpinnerActivity::class.java))
+        }
     }
+
 }

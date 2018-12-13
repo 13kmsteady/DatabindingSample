@@ -1,61 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools">
-
-    <data>
-
-    </data>
-
-    <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".MainActivity">
-
-        <Button
-                android:id="@+id/btnBasic"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/basic"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-
-        <Button
-                android:id="@+id/btnExpressions"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/expressions"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btnBasic"/>
-
-        <Button
-                android:id="@+id/btnEvent"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/event_binding"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btnExpressions"/>
-
-        <Button
-                android:id="@+id/btnObservable"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/observable"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btnEvent"/>
-
-        <Button
-                android:id="@+id/btnAdapters"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/binding_adapters"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btnObservable"/>
-
-    </android.support.constraint.ConstraintLayout>
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+	
+	<data>
+	
+	</data>
+	
+	<android.support.constraint.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".MainActivity">
+		
+		<Button
+			android:id="@+id/btnBasic"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/basic"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+		
+		<Button
+			android:id="@+id/btnExpressions"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/expressions"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/btnBasic" />
+		
+		<Button
+			android:id="@+id/btnEvent"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/event_binding"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/btnExpressions" />
+		
+		<Button
+			android:id="@+id/btnObservable"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/observable"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/btnEvent" />
+		
+		<Button
+			android:id="@+id/btnAdapters"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/binding_adapters"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/btnObservable" />
+		
+		<Button
+			android:id="@+id/btnSpinner"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/spinner"
+			app:layout_constraintBottom_toBottomOf="@id/btnAdapters"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent" />
+	
+	</android.support.constraint.ConstraintLayout>
 </layout>
